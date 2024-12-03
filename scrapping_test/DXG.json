@@ -1,0 +1,773 @@
+{
+    "changedBy": {
+        "applicationName": "AMD",
+        "persona": "Shopper"
+    },
+    "coxAutoReferences": {
+        "commonOrgId": "1559509b-4ee8-4653-9bb5-c46ad907eb83",
+        "dealRefId": "510000000310788333"
+    },
+    "dealComment": "I do have a scheduled appointment on friday at 2pm but more than welcome to work something out earlier in the week. ",
+    "dealers": [
+        {
+            "name": "MMD",
+            "value": "11853"
+        }
+    ],
+    "language": "en",
+    "participants": [
+        {
+            "primaryAddress": {
+                "postalCode": "18042",
+                "addressType": "Other"
+            },
+            "pixallId": "sEIwb9Q1bRFNU34wwViQAIQL",
+            "customerType": "Individual",
+            "name": {
+                "firstName": "Brandon",
+                "lastName": "Perez"
+            },
+            "emailContactInfo": {
+                "emailAddress": "bperez270634@gmail.com"
+            },
+            "phoneContactInfo": {
+                "phoneNumber": "4848021745",
+                "tcpaConsent": false
+            },
+            "estimatedCreditScore": 720,
+            "commonConsumerId": null
+        },
+        {
+            "primaryAddress": {
+                "addressLine1": "27 N 7th St",
+                "city": "Allentown",
+                "stateProvince": "PA",
+                "postalCode": "18101",
+                "addressLine2": "Apt 321",
+                "addressType": "Other"
+            },
+            "name": {
+                "firstName": "Brandon",
+                "lastName": "Perez"
+            },
+            "phoneContactInfo": {
+                "phoneNumber": "4848021745",
+                "dataType": "Phone",
+                "tcpaConsent": false
+            },
+            "emailContactInfo": {
+                "emailAddress": "bperez270634@gmail.com",
+                "dataType": "Email"
+            },
+            "commonConsumerId": null
+        }
+    ],
+    "references": [
+        {
+            "name": "creditScoreEntry",
+            "value": "manual"
+        }
+    ],
+    "saleType": "Retail",
+    "testDrive": {
+        "scheduledDate": "2024-07-19T15:00:00.000Z",
+        "timeOfDay": "Afternoon"
+    },
+    "dealId": "Eg1WVwYLkZwyt7od1FTYP",
+    "X-CoxAuto-Correlation-Id": "clymcb0kk004f08l4hiklh1xw",
+    "meta": {
+        "current": true,
+        "clientId": "1f16cde7-8e05-42d3-bbd4-9bc0b0199ab0",
+        "apiVersion": "4.27.4",
+        "requestApiVersion": "4.27.4",
+        "clientName": "Accelerate"
+    },
+    "dealLifecycle": {
+        "status": "InProgress",
+        "createdOn": "2024-07-15T01:50:52.407Z"
+    },
+    "deal": {
+        "acceptedByBuyer": false,
+        "currencyCode": "USD",
+        "dealType": "Lease",
+        "financialDetails": {
+            "priceDetails": {
+                "currentOfferPrice": 33635,
+                "discountOfMsrp": 0,
+                "retailPrice": 33635,
+                "sellingPrice": 33635,
+                "isOnePrice": false
+            },
+            "feeDetails": {
+                "fees": [
+                    {
+                        "feeTypeId": 3,
+                        "feeAmount": 389,
+                        "feeName": "Documentation Fee",
+                        "feeDescription": "Documentation Fee",
+                        "isFeeCapitalized": true,
+                        "isFeeIncludedInCalculation": true,
+                        "feeCategory": "Dealer"
+                    },
+                    {
+                        "feeTypeId": 1050,
+                        "feeAmount": 650,
+                        "feeName": "Acquisition Fee",
+                        "feeDescription": "Acquisition Fee",
+                        "isFeeCapitalized": false,
+                        "isFeeIncludedInCalculation": true,
+                        "feeCategory": "Lender"
+                    }
+                ],
+                "feeSummary": {
+                    "totalFees": 1039,
+                    "totalUpfrontFees": 650,
+                    "totalCapitalizedFees": 389
+                }
+            },
+            "taxDetails": {
+                "taxSummary": {
+                    "totalTax": 0
+                }
+            },
+            "incentiveDetails": {
+                "incentiveSummary": {
+                    "appliedIncentiveAmount": 3400,
+                    "appliedIncentiveIds": [
+                        159429,
+                        138705
+                    ]
+                },
+                "incentives": [
+                    {
+                        "incentiveId": 159429,
+                        "cash": 3000,
+                        "programName": "2024 Hyundai Special Financing",
+                        "description": "See the dealer for details",
+                        "exclusions": [
+                            149090
+                        ],
+                        "programId": "H202",
+                        "isStandardRebate": true,
+                        "isManualIncentive": false,
+                        "incentiveType": "Finance",
+                        "programType": "Standard",
+                        "startDate": "2024-07-04T00:00:00.000Z",
+                        "endDate": "2024-07-31T00:00:00.000Z"
+                    },
+                    {
+                        "incentiveId": 138705,
+                        "cash": 400,
+                        "programName": "2024 Hyundai College Grad Program - Lease",
+                        "description": "Customer must have graduated with a Master's, Bachelor's or Associate's degree from a U.S.-accredited college or registered nursing school within the past two (2) years or will graduate from such a school within the next six months from date of finance contract. No adverse credit history. Verifiable proof of employment or firm commitment from an employer with start date no more than 90 days from date of finance contract.  Must be financed through HMF.",
+                        "isStandardRebate": false,
+                        "isManualIncentive": false,
+                        "incentiveType": "Finance",
+                        "programType": "Conditional",
+                        "startDate": "2024-01-01T00:00:00.000Z",
+                        "endDate": "2024-12-31T00:00:00.000Z"
+                    }
+                ]
+            },
+            "productDetails": {
+                "productSummary": {
+                    "totalProductAmount": 614,
+                    "totalProductMonthlyPayment": 0
+                },
+                "products": [
+                    {
+                        "productCode": "697",
+                        "productName": "HPP Pre-Paid Maintenance",
+                        "productPrice": 614,
+                        "productCost": 614,
+                        "productCategoryCode": "PPM",
+                        "profitLocation": "Back",
+                        "productProviderName": "Hyundai (Remit)",
+                        "productDeductible": 0,
+                        "productCoverageMiles": 36000,
+                        "productAddOnDetails": {
+                            "productAddOnSummary": {
+                                "totalProductAddOnCost": 0,
+                                "totalProductAddOnPrice": 0
+                            }
+                        },
+                        "productCoverageLength": 36,
+                        "productMarkup": {
+                            "markupMethod": "Dollar",
+                            "markupDollarAmount": 0
+                        },
+                        "productProviderPlan": "Hyundai Pre-Paid Maintenance with Tire Rotation 1019 - SYNTHETIC PPMTR - SEVERE (3,750 INTERVAL) (NT)"
+                    }
+                ],
+                "unselectedProducts": [
+                    {
+                        "productCode": "936",
+                        "productName": "Service Contract",
+                        "productPrice": 2103,
+                        "productCost": 1103,
+                        "productCategoryCode": "VSC",
+                        "profitLocation": "Back",
+                        "productProviderName": "ZURICH",
+                        "productDeductible": 100,
+                        "productCoverageMiles": 60000,
+                        "productAddOnDetails": {
+                            "productAddOnSummary": {
+                                "totalProductAddOnCost": 0,
+                                "totalProductAddOnPrice": 0
+                            }
+                        },
+                        "productCoverageLength": 36,
+                        "productDeductibleMethod": "Disappearing",
+                        "productMarkup": {
+                            "markupMethod": "Dollar",
+                            "markupDollarAmount": 1000
+                        },
+                        "productProviderPlan": "Used - Z VSC - Used - $100 Ded Waiver - Z VSC - Used Comprehensive - $100 Ded Waiver"
+                    },
+                    {
+                        "productCode": "943",
+                        "productName": "Tire and Wheel",
+                        "productPrice": 865,
+                        "productCost": 365,
+                        "productCategoryCode": "RHTW",
+                        "profitLocation": "Back",
+                        "productProviderName": "ZURICH",
+                        "productDeductible": 0,
+                        "productCoverageMiles": 0,
+                        "productAddOnDetails": {
+                            "productAddOnSummary": {
+                                "totalProductAddOnCost": 0,
+                                "totalProductAddOnPrice": 0
+                            }
+                        },
+                        "productCoverageLength": 36,
+                        "productMarkup": {
+                            "markupMethod": "Dollar",
+                            "markupDollarAmount": 500
+                        },
+                        "productProviderPlan": "New - Z Tire & Wheel - Luxury - Z Tire & Wheel - Luxury"
+                    },
+                    {
+                        "productCode": "1271",
+                        "productName": "Interior Exterior Protection",
+                        "productPrice": 1054,
+                        "productCost": 443,
+                        "productCategoryCode": "FPP",
+                        "profitLocation": "Back",
+                        "productProviderName": "ZURICH",
+                        "productDeductible": 0,
+                        "productCoverageMiles": 0,
+                        "productAddOnDetails": {
+                            "productAddOnSummary": {
+                                "totalProductAddOnCost": 0,
+                                "totalProductAddOnPrice": 0
+                            }
+                        },
+                        "productCoverageLength": 36,
+                        "productMarkup": {
+                            "markupMethod": "Dollar",
+                            "markupDollarAmount": 611
+                        },
+                        "productProviderPlan": "New - Zurich Shield Windshield - $6000 - Zurich Shield Windshield - $6,000 Aggregate"
+                    }
+                ]
+            },
+            "paymentDetails": {
+                "term": 36,
+                "annualMiles": 12000,
+                "basePayment": 237.7,
+                "payment": 237.7,
+                "numberOfPayments": 36,
+                "paymentsPerYear": 12,
+                "daysToFirstPayment": 0,
+                "totalOfPayments": 8568,
+                "firstPayment": {
+                    "amount": 237.7,
+                    "paymentDate": "2024-07-15T00:00:00.000Z"
+                },
+                "excessMileageCharge": 0.2,
+                "paymentFrequency": "Monthly",
+                "totalInterest": 3404.4,
+                "rentChargePerPeriod": 94.57,
+                "totalDepreciation": 5152.8,
+                "depreciationPerPeriod": 143.13
+            },
+            "proceedDetails": {
+                "lenderDiscount": 0,
+                "monthlyInterestOnRateMarkup": 0,
+                "reservePaid": 0.75,
+                "totalInterestOnRateMarkup": 133.33,
+                "totalReserve": 100
+            },
+            "profitDetails": {
+                "frontEndProfit": 0,
+                "backEndProfit": 0,
+                "reserveProfit": 100,
+                "totalProfit": 100
+            },
+            "residualDetails": {
+                "residualPercentApplied": 0,
+                "residualNetPercent": 54,
+                "netResidual": 18162.9,
+                "totalMiles": 36000,
+                "baseResidualDollar": 18162.9,
+                "baseResidualPercent": 54,
+                "maxResidualizedMsrp": 0,
+                "maxResidualizedMsrpApplied": false
+            },
+            "rateDetails": {
+                "buyRate": {
+                    "moneyFactor": 0.00228
+                },
+                "sellRate": {
+                    "moneyFactor": 0.00228
+                }
+            },
+            "dueInAdvanceDetails": {
+                "netCashDown": 5170,
+                "customerDueAtSigning": 5170,
+                "totalSecurityDeposit": 0,
+                "dueAtSigning": 12210,
+                "outOfPocket": 5170
+            },
+            "capCostDetails": {
+                "capReductionRebate": 3400,
+                "capReductionTradeIn": 3640,
+                "totalCapReduction": 11322.3,
+                "capReductionCash": 4282.3,
+                "adjustedCapCost": 23315.7,
+                "grossCapCost": 34638
+            },
+            "programDetails": {
+                "lenderId": 619,
+                "lenderCode": "HMF",
+                "branchId": 2140,
+                "branchName": "EASTERN",
+                "lenderPartnerName": "HMFC",
+                "lenderLongName": "Hyundai Motor Finance",
+                "regionalId": 3465,
+                "regionalTitle": "EA - Philadelphia ADI (expand)",
+                "creditTier": 2,
+                "creditTierDesc": "Tier 2",
+                "maxAdvance": 40751,
+                "maxAdvancePercent": 1.2,
+                "programSource": "PaymentServices",
+                "programName": "RG SP",
+                "programType": "Regional",
+                "rateProgram": "BASIC",
+                "residualProgram": "N/A",
+                "term": 36,
+                "creditTierTargetScore": 720,
+                "programStartDate": "2024-07-04T00:00:00.000Z",
+                "programEndDate": "2024-07-31T23:00:00.000Z"
+            }
+        },
+        "isDealInitialOpportunity": false,
+        "visibility": {
+            "isDraftDeal": false,
+            "needsManagerApproval": false,
+            "approvedByManager": false
+        },
+        "participants": {
+            "buyer": {
+                "emailAddress": "bperez270634@gmail.com",
+                "postalCode": "18042",
+                "firstName": "Brandon",
+                "lastName": "Perez",
+                "estimatedCreditScore": 720,
+                "phoneNumber": "4848021745",
+                "address": {
+                    "postalCode": "18042",
+                    "addressLine1": "abc123",
+                    "stateProvince": "NJ"
+                }
+            }
+        },
+        "vehicles": {
+            "sellingVehicle": {
+                "inventoryType": "New",
+                "vehicleDetailPage": "https://www.browndaubhyundai.com/inventory/new-2024-hyundai-santa-cruz-sel-awd-all-wheel-drive-suv-5ntjbdde6rh117241/",
+                "vehicleImage": "https://vehicle-images.dealerinspire.com/34f6-110011262/thumbnails/large/5NTJBDDE6RH117241/71fbe0d6240a388c892095a75715ec34.jpg",
+                "priceCostDetails": {
+                    "originalMsrp": 33635,
+                    "retailPrice": 33635,
+                    "retailPriceName": "Selling Price"
+                },
+                "vin": "5NTJBDDE6RH117241",
+                "year": "2024",
+                "make": "Hyundai",
+                "model": "SANTA CRUZ",
+                "trim": "SEL AWD",
+                "odometerMileage": 20,
+                "exteriorColor": null,
+                "interiorColor": null,
+                "stockNumber": "T5244"
+            },
+            "tradeInVehicles": {
+                "tradeIns": [
+                    {
+                        "tradeVehicle": {
+                            "isLeaseTrade": false,
+                            "inventoryType": "Used",
+                            "year": "2011",
+                            "make": "Chevrolet",
+                            "model": "Equinox",
+                            "modelCode": "56",
+                            "trim": "LT Sport Utility 4D",
+                            "odometer": 78000,
+                            "condition": "Very Good",
+                            "exteriorColor": "gray",
+                            "installedOptions": [
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378730",
+                                        "description": "4-Cyl, 2.4 Liter",
+                                        "name": "Engine"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378749",
+                                        "description": "Automatic, 6-Spd w/Overdrive",
+                                        "name": "Transmission"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378841",
+                                        "description": "FWD",
+                                        "name": "Drivetrain"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388032",
+                                        "description": "Hill Start Assist",
+                                        "name": "Braking and Traction"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388031",
+                                        "description": "Traction Control",
+                                        "name": "Braking and Traction"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388033",
+                                        "description": "StabiliTrak",
+                                        "name": "Braking and Traction"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378849",
+                                        "description": "ABS (4-Wheel)",
+                                        "name": "Braking and Traction"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "7366253",
+                                        "description": "Anti-Theft System",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388038",
+                                        "description": "Keyless Entry",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378843",
+                                        "description": "Air Conditioning",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378845",
+                                        "description": "Power Windows",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378846",
+                                        "description": "Power Door Locks",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378848",
+                                        "description": "Cruise Control",
+                                        "name": "Comfort and Convenience"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378844",
+                                        "description": "Power Steering",
+                                        "name": "Steering"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378847",
+                                        "description": "Tilt & Telescoping Wheel",
+                                        "name": "Steering"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378757",
+                                        "description": "AM/FM Stereo",
+                                        "name": "Entertainment and Instrumentation"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378769",
+                                        "description": "CD/MP3 (Single Disc)",
+                                        "name": "Entertainment and Instrumentation"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388045",
+                                        "description": "XM Satellite",
+                                        "name": "Entertainment and Instrumentation"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388047",
+                                        "description": "Bluetooth Wireless",
+                                        "name": "Entertainment and Instrumentation"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388042",
+                                        "description": "OnStar",
+                                        "name": "Entertainment and Instrumentation"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4442144",
+                                        "description": "Backup Camera",
+                                        "name": "Safety and Security"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388049",
+                                        "description": "Dual Air Bags",
+                                        "name": "Safety and Security"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388051",
+                                        "description": "Side Air Bags",
+                                        "name": "Safety and Security"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388053",
+                                        "description": "F&R Head Curtain Air Bags",
+                                        "name": "Safety and Security"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388029",
+                                        "description": "Power Seat",
+                                        "name": "Seats"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4388036",
+                                        "description": "Daytime Running Lights",
+                                        "name": "Lighting"
+                                    }
+                                },
+                                {
+                                    "optionType": "Option",
+                                    "price": 0,
+                                    "cost": 0,
+                                    "details": {
+                                        "oemOptionCode": "4378803",
+                                        "description": "Alloy Wheels",
+                                        "name": "Wheels and Tires"
+                                    }
+                                }
+                            ]
+                        },
+                        "tradePayoffDetails": {
+                            "tradePayoffAmount": 0
+                        },
+                        "tradeAllowance": 3640,
+                        "isTradeIncluded": true,
+                        "isBuyerRegisteredOwner": true,
+                        "isSellingVehicleRegisteredInSameState": true
+                    }
+                ],
+                "tradeInSummary": {
+                    "totalAllowance": 3640,
+                    "netTrade": 3640,
+                    "totalPayoff": 0
+                }
+            }
+        },
+        "versionComment": "I do have a scheduled appointment on friday at 2pm but more than welcome to work something out earlier in the week. ",
+        "versionCreatedOn": "2024-07-15T02:02:51.591Z",
+        "versionCreatedBy": {
+            "applicationName": "AMD",
+            "persona": "Shopper"
+        },
+        "version": "vvxaqc2aI3E4hbcAPINbC"
+    },
+    "dealProgressMilestones": {
+        "accessories": {
+            "state": "NotStarted",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:50:52.503Z"
+        },
+        "creditApplication": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:57:53.835Z"
+        },
+        "documentUpload": {
+            "state": "NotStarted",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:50:52.503Z"
+        },
+        "incentives": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:50:52.503Z"
+        },
+        "offer": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T02:03:21.308Z"
+        },
+        "testDrive": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T02:02:50.752Z"
+        },
+        "tradeIn": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:50:52.503Z"
+        },
+        "vehicleProtectionProducts": {
+            "state": "Completed",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:51:29.436Z"
+        },
+        "vehicleReservation": {
+            "state": "NotStarted",
+            "persona": "Shopper",
+            "applicationName": "AMD",
+            "updatedOn": "2024-07-15T01:50:52.503Z"
+        }
+    }
+}

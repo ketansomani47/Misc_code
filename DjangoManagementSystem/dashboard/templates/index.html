@@ -1,0 +1,24 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Common Flag Service</title>
+<!--{% load static %}-->
+<!--<link rel="shortcut icon" type="image/jpg" href="{% static 'images/flag.ico' %}"/>-->
+<!--<link rel="stylesheet" href="{% static 'style.css' %}">-->
+<nav>
+ <h1>Common Flag Service</h1>
+ <ul>
+  <li><a href="">Register App</a>
+  <li><a href="">Register Application Role</a>
+  <li><a href="">Register User</a>
+  <li><a href="">Home</a>
+ </ul>
+</nav>
+<section class="content">
+ <header>
+   {% block header %}{% endblock %}
+ </header>
+ {% block content %}{% endblock %}
+</section>
+<body>
+{% load static %}
+<link rel="shortcut icon" type="image/jpg" href="{% static 'images/img1.PNG' %}"/>
+</body>

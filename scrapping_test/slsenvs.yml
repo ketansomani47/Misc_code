@@ -1,0 +1,167 @@
+common:
+  log_dest_acc_id: "753750589304"
+  cf_logging_s3_bucket: "awssplunk-us-east-1-logging-coxautomotive.s3.amazonaws.com"
+  add_document_req_headers_lambda_arn: arn:aws:lambda:${self:custom.region}:${self:custom.env.account_no}:function:${self:service}-${self:custom.deploy_env}-addDocumentReqHeaders:${self:custom.env.add_document_req_headers_lambda_version}
+  add_thumbnail_req_headers_lambda_arn: arn:aws:lambda:${self:custom.region}:${self:custom.env.account_no}:function:${self:service}-${self:custom.deploy_env}-addThumbnailReqHeaders:${self:custom.env.add_thumbnail_req_headers_lambda_version}
+
+lab:
+  account_alias: "awscoxautolabs18"
+  account_no: "607694952559"
+  bucket: "awscoxautolabs18-serverless-packages"
+  hosted_zone_id: Z009018136YD3YK59CG9W
+  alternate_domain_url: dr-finance-${self:provider.stage}.dvt1.aws.dealertrack.com
+  us-east-1:
+    certificate_id: ea446151-2d6a-4543-afa8-33e6a8fa80db
+  doc_upload_origin_domain_url: dr-external-docs-api-hammy.dvt1.aws.dealertrack.com
+  leads_origin_domain_url: leads-lab.dvt1.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp-lab.dvt1.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info-lab.dvt1.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate-lab.dvt1.aws.dealertrack.com
+  caas_origin_domain_url: caas-dev.drsvcnp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks-lab.dvt1.aws.dealertrack.com
+  default_stage: "lab"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: ""
+#  waf_acl_arn: arn:aws:wafv2:us-east-1:607694952559:regional/webacl/dr-shared-web-acl/8b25ad82-c9bd-4d70-9bbe-6f970499b1e1
+  origin_secret: "01F79AVX95EWPG2V15MVC0HHM7"
+  new_relic_acct_id: "1610605"
+  new_relic_api_key: ${ssm:/NewRelic/1610605/api_key}
+
+np_pr:
+  account_alias: "awssfidrsvcnp"
+  account_no: "683423058194"
+  bucket: "awssfidrsvcnp-serverless-packages"
+  hosted_zone_id: Z2P5PYTN3GLIVX
+  alternate_domain_url: dr-finance-${self:provider.stage}.drsvcnp.aws.dealertrack.com
+  us-east-1:
+    certificate_id: 7d7250d1-3eb7-4bef-8749-191a0a97db96
+  doc_upload_origin_domain_url: dr-external-docs-api-dev.drsvcnp.aws.dealertrack.com
+  leads_origin_domain_url: leads-dev.drsvcnp.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp-dev.drsvcnp.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info-dev.drsvcnp.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate-dev.drsvcnp.aws.dealertrack.com
+  caas_origin_domain_url: caas-dev.drsvcnp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks-dev.drsvcnp.aws.dealertrack.com
+  default_stage: "np_pr"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: arn:aws:wafv2:us-east-1:683423058194:global/webacl/dr-external-shared-web-acl/b0ac7fab-3bc7-4c60-875a-2f06b1c41cfe
+  origin_secret: "01FGPMDVGP1ZSBANDFMXWRJ6ST"
+  new_relic_acct_id: "1610605"
+  new_relic_api_key: ${ssm:/NewRelic/1610605/api_key}
+
+dev:
+  account_alias: "awssfidrsvcnp"
+  account_no: "683423058194"
+  bucket: "awssfidrsvcnp-serverless-packages"
+  hosted_zone_id: Z2P5PYTN3GLIVX
+  alternate_domain_url: dr-finance-dev.drsvcnp.aws.dealertrack.com
+  us-east-1:
+    certificate_id: 7d7250d1-3eb7-4bef-8749-191a0a97db96
+  doc_upload_origin_domain_url: dr-external-docs-api-dev.drsvcnp.aws.dealertrack.com
+  leads_origin_domain_url: leads-dev.drsvcnp.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp-dev.drsvcnp.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info-dev.drsvcnp.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate-dev.drsvcnp.aws.dealertrack.com
+  caas_origin_domain_url: caas-dev.drsvcnp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks-dev.drsvcnp.aws.dealertrack.com
+  default_stage: "dev"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: arn:aws:wafv2:us-east-1:683423058194:global/webacl/dr-external-shared-web-acl/b0ac7fab-3bc7-4c60-875a-2f06b1c41cfe
+  origin_secret: "01FGPMDVGP1ZSBANDFMXWRJ6ST"
+  new_relic_acct_id: "1610605"
+  new_relic_api_key: ${ssm:/NewRelic/1610605/api_key}
+
+qa:
+  account_alias: "awssfidrsvcnp"
+  account_no: "683423058194"
+  bucket: "awssfidrsvcnp-serverless-packages"
+  hosted_zone_id: Z2P5PYTN3GLIVX
+  alternate_domain_url: dr-finance-qa.drsvcnp.aws.dealertrack.com
+  us-east-1:
+    certificate_id: 7d7250d1-3eb7-4bef-8749-191a0a97db96
+  doc_upload_origin_domain_url: dr-external-docs-api-qa.drsvcnp.aws.dealertrack.com
+  leads_origin_domain_url: leads-qa.drsvcnp.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp-qa.drsvcnp.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info-qa.drsvcnp.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate-qa.drsvcnp.aws.dealertrack.com
+  caas_origin_domain_url: caas-qa.drsvcnp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks-qa.drsvcnp.aws.dealertrack.com
+  default_stage: "qa"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: arn:aws:wafv2:us-east-1:683423058194:global/webacl/dr-external-shared-web-acl/b0ac7fab-3bc7-4c60-875a-2f06b1c41cfe
+  origin_secret: "01FGPMDVGP1ZSBANDFMXWRJ6ST"
+  new_relic_acct_id: "1610605"
+  new_relic_api_key: ${ssm:/NewRelic/1610605/api_key}
+
+uat:
+  account_alias: "awssfidrsvcpp"
+  account_no: "136093617899"
+  bucket: "awssfidrsvcpp-serverless-packages"
+  hosted_zone_id: ZBEIE1LNJMOB8
+  alternate_domain_url: dr-finance.drsvcpp.aws.dealertrack.com
+  us-east-1:
+    certificate_id: 10735ba5-9a25-44c5-8b35-cea412a12a38
+  doc_upload_origin_domain_url: dr-external-docs-api-uat.drsvcpp.aws.dealertrack.com
+  leads_origin_domain_url: leads.drsvcpp.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp.drsvcpp.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info.drsvcpp.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate.drsvcpp.aws.dealertrack.com
+  caas_origin_domain_url: caas.drsvcpp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks.drsvcpp.aws.dealertrack.com
+  default_stage: "uat"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: arn:aws:wafv2:us-east-1:136093617899:global/webacl/dr-external-shared-web-acl/057de18b-cd46-4f67-a941-76b7d81d51cc
+  origin_secret: "01HGBWN2VM5T02P4DS3YYDSQPH"
+  new_relic_acct_id: "1610605"
+  new_relic_api_key: ${ssm:/NewRelic/1610605/api_key}
+
+pa:
+  account_alias: "awssfidrapipp"
+  account_no: "761907918238"
+  bucket: "awssfidrapipp-serverless-packages"
+  hosted_zone_id: Z06866503UCIFTEZCPVED
+  alternate_domain_url: dr-finance-pa.drapi-pp.aws.dealertrack.com
+  us-east-1:
+    certificate_id: 659d8cb4-452e-4625-aef1-6a9e9e2bd8f7
+  doc_upload_origin_domain_url: dr-external-docs-api-pa.drapi-pp.aws.dealertrack.com
+  leads_origin_domain_url: leads-pa.drapi-pp.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp-pa.drapi-pp.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info-pa.drapi-pp.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate-pa.drapi-pp.aws.dealertrack.com
+  caas_origin_domain_url: caas-pa.drapi-pp.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks-pa.drapi-pp.aws.dealertrack.com
+  default_stage: "pa"
+  add_document_req_headers_lambda_version: 5
+  add_thumbnail_req_headers_lambda_version: 5
+  waf_acl_arn: arn:aws:wafv2:us-east-1:761907918238:global/webacl/dr-external-shared-web-acl/43485999-9bfc-416c-9a23-5215fa097cc3
+  origin_secret: "01HGBWN2VM5T02P4DS3YYDSQPH"
+  new_relic_acct_id: "4095164"
+  new_relic_api_key: ${ssm:/NewRelic/4095164/api_key}
+
+prod:
+  account_alias: "awssfidrsvc"
+  account_no: "706165609771"
+  bucket: "awssfidrsvc-serverless-packages"
+  hosted_zone_id: ZWM7T6NVOAF23
+  alternate_domain_url: dr-finance.drsvc.aws.dealertrack.com
+  us-east-1:
+    certificate_id: dbf0ea56-7bd6-4f74-8010-e67ed03c6b7a
+  doc_upload_origin_domain_url: dr-external-docs-api-prod.drsvc.aws.dealertrack.com
+  leads_origin_domain_url: leads.drsvc.aws.dealertrack.com
+  creditapp_origin_domain_url: creditapp.drsvc.aws.dealertrack.com
+  dealer_lender_info_origin_domain_url: dealer-lender-info.drsvc.aws.dealertrack.com
+  deal_update_origin_domain_url: dealupdate.drsvc.aws.dealertrack.com
+  caas_origin_domain_url: caas.drsvc.aws.dealertrack.com
+  healthchecks_origin_domain_url: healthchecks.drsvc.aws.dealertrack.com
+  default_stage: "prod"
+  add_document_req_headers_lambda_version: 1
+  add_thumbnail_req_headers_lambda_version: 1
+  waf_acl_arn: arn:aws:wafv2:us-east-1:706165609771:global/webacl/dr-external-shared-web-acl/7fe0e798-18b4-473e-9796-775093a1fb00
+  origin_secret: "01HGBWQ72RBTEHWRJETTWKDWG0"
+  new_relic_acct_id: "1610606"
+  new_relic_api_key: ${ssm:/NewRelic/1610606/api_key}

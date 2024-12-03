@@ -1,0 +1,105 @@
+Postgresql -
+1. Open source DBMS
+2. Supports JSON and SQL for relational and non relational queries
+3. developed by Michael stonebraker and his team
+4. Light Weight
+5. 
+
+Data Type:
+Smallint - 2 bytes
+integer - 4 bytes
+bigint - 8 bytes
+smallserial - 2 bytes autoincrement integer
+serial - 4 bytes autoincrement integer
+bigserial - 8 bytes autoincrement integer
+real
+decimal
+char - fixed length
+varchar - variable length
+text - variable unlimited length
+date - 
+time - 
+timestamp - 
+json - key value pair data
+jsonb - key value pair data with single space
+boolean - 
+bit(n) - exactly n number of bit string
+bit varying(n) - at most n number of bit string
+uuid - universal unique identifier
+
+drop index index_name --> postgres
+drop index index_name on table_name --> MySQL
+
+Explain - To show query plan
+syntax - Explain query;
+
+index Type
+1. single column
+2. multiple column
+3. partial index
+4. implicit index
+5. unique index
+
+Constraint
+1. Unique
+2. check
+3. not null
+4. default
+5. foreign key
+
+
+https://www.postgresqltutorial.com/plpgsql-cursor/
+syntax or cursor- 
+declare cur_name cursor for query
+
+opening cursor
+1. unbound cursor - when declaring the cursor at that time there is no query so when 
+opening the cursor at that time we will declare the query
+
+syntax - open my_cursor for 
+select * from city 
+where country = p_country;
+
+2. bound cursor - when declaring the cursor at that time query already define so when 
+opening the cursor at that time need to pass argument to query if necessary
+
+syntax - open cur_films;
+open cur_films2(year:=2005);
+
+operations in cursor - after opening cursor, we can use fetch, move, update and delete
+1. Fetch - FETCH statement gets the next row from the cursor and assigns it a target_variable,
+which could be a record, a row variable, or a comma-separated list of variables. If no more 
+row found, the target_variable is set to NULL(s).
+
+syntax - fetch [ direction { from | in } ] cursor_variable 
+into target_variable;
+
+next, last, first, count, prior, all, forward, forward|backword [count|all]
+
+2. Move - If you want to move the cursor only without retrieving any row, you use the MOVE statement. 
+The direction accepts the same value as the FETCH statement.
+
+syntax - move [ direction { from | in } ] cursor_variable;
+
+3. Delete | Update - Once a cursor is positioned, we can delete or update row identifying by the cursor
+ using DELETE WHERE CURRENT OF or UPDATE WHERE CURRENT OF statement
+
+syntax - update table_name 
+set column = value, ... 
+where current of cursor_variable;
+
+delete from table_name 
+where current of cursor_variable;
+
+closing cursor - to close the cursor use close statement
+
+syntax - close cur_name;
+
+
+
+Database
+create database db_name; --> create db
+drop database db_name; --> drop db
+backup database db_name to disk = 'file_path' --> doing db backup
+backup database db_name to disk = 'file_path' with differential --> doing parts of db backup which changes after last backup
+

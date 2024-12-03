@@ -1,0 +1,108 @@
+docker build -t agarwaljaishree/flask-img . --no-cache
+docker login -u "agarwaljaishree" -p "Jaishree@1997" docker.io
+or
+docker login docker.io
+docker push agarwaljaishree/flask-img
+docker run -p <application port>:<container port> <imagename>
+application port-->exposed port, which we will use to access the application
+container port-->port on which code is running inside the container
+
+
+to autogenerate the kubeconfig file:
+gcloud container clusters get-credentials "flask-cluster" --zone us-central1-c
+
+to view kubeconfig file:
+kubectl config view
+
+to view logs of pod:
+kubectl logs -f <name of pod>
+
+to view any objects:
+kubectl get <object type>
+object type can be-->pods/services/rs
+
+to delete any objects:
+kubectl delete <object type> <object name>
+
+delete all the objects in a cluster:
+kubectl delete all --all -n <namespace>
+
+to view any objects in particular namespace:
+kubectl get <object type> -n <namespace>
+
+to view any objects in descriptive detail:
+kubectl get <object type> -o wide
+
+to get any object in watch mode:
+kubectl get <object type> -w
+
+
+target port: port on which container is running inside the pod (port the container accepts traffic on)
+port: port which is exposed outside the container (is the abstracted Service port, which can be used to access the service)
+
+to get the complete description of nodes/pods:
+kubectl describe nodes
+kubectl describe pods
+
+Nodeport service- uses the external ip of node to access the application.
+
+to enable firewall for nodeport: gcloud compute firewall-rules create <rule name> --allow tcp:<exposed nodeport> --project <project id>
+
+cluster IP service- to access one pod from another pod present within a cluster. to access the application we will use name of service (http://nameofservice:serviceport)
+gcloud compute firewall-rules create nodeport-rule --allow tcp:32000 --project test-kubernetes-424910
+
+https://signoz.io/blog/kubectl-top/#:~:text=To%20obtain%20these%20metrics%2C%20you,to%20install%20metrics%20API%20here
+
+
+go inside the pod:
+kubectl exec --stdin --tty <podname> -- /bin/bash
+to go inside a container:
+kubectl exec --stdin --tty <podname> -- /bin/sh
+to create container using image and go inside it:
+docker run --rm -it <imagename> bash
+
+
+
+can we create pod and service in one yaml file
+how to generate kube config
+while creating pod or service, where we are defining cluster in which pod or service will be created
+
+
+
+https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.44.0/deploy/static/provider/cloud/deploy.yaml
+
+
+
+annotations:
+    # cloud.google.com/neg: '{"ingress":true}'
+    nginx.ingress.kubernetes.io/rewrite-target: /
+
+
+curl -I -k http://nagp.flaskapp.com/v1/
+
+kubectl set image deployment/<name of deployment> <name of container>=<image of container>
+eg: kubectl set image deployment/nginx-deployment nginx=nginx:1.25-alpine
+to check rollout status: kubectl rollout status deployment/<name of deployment>
+ith-wywc-mak
+
+
+
+
+gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project test-kubernetes-424910
+
+kubectl exec --stdin --tty mysql-server-0 -- /bin/bash
+
+gcloud compute firewall-rules create nodeport-rule --allow tcp:32000 --project test-kubernetes-424910
+
+kubectl set image deployment/flask-app-deployment flask-app-container=ketansomani/nagp_flask:2.0
+
+kubectl rollout status deployment/flask-app-deployment
+
+inside pod
+
+def fibonacci(n):  
+   if n <= 1:  
+       return n  
+   else:  
+       return(fibonacci(n-1) + fibonacci(n-2))
+

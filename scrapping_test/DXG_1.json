@@ -1,0 +1,1350 @@
+{
+  "dealId": "string",
+  "apiVersion": "4.2.0",
+  "artifacts": [
+    {
+      "artifactType": "Presentation",
+      "href": "string",
+      "submitter": "string",
+      "comment": "string",
+      "updateTimeStamp": "2023-02-22T21:52:49.0350000+00:00"
+    }
+  ],
+  "changedBy": {
+    "applicationName": "Showroom",
+    "persona": "Dealer",
+    "dealerUser": "johndoe123"
+  },
+  "coxAutoReferences": {
+    "commonOrgId": "string",
+    "dealRefId": "string",
+    "walletId": "string",
+    "omsOrderNumber": "string"
+  },
+  "dealComment": "string",
+  "dealers": [
+    {
+      "name": "string",
+      "value": "string"
+    }
+  ],
+  "dealLifecycle": {
+    "status": "InProgress",
+    "createdOn": "2023-02-22T21:52:49.0350000+00:00",
+    "soldDate": "2023-02-22T21:52:49.0350000+00:00",
+    "approvedDate": "2023-02-22T21:52:49.0350000+00:00",
+    "contractSignedDate": "2024-09-20T10:35:50.044Z",
+    "deliveredDate": "2023-03-22T21:52:49.0350000+00:00",
+    "recappedDate": "2023-02-22T21:52:49.0350000+00:00",
+    "finalizedDate": "2023-02-22T21:52:49.0350000+00:00",
+    "fundedDate": "2023-02-22T21:52:49.0350000+00:00",
+    "unwoundDate": "2023-02-22T21:52:49.0350000+00:00",
+    "cancelledDate": "2023-02-22T21:52:49.0350000+00:00"
+  },
+  "dealStructure": {
+    "acceptedByBuyer": false,
+    "creditApplication": {
+      "creditApplicationId": "01DDY25TBPNE21EH3P287DNJQ0",
+      "creditDecision": {
+        "isDecisionApplied": true,
+        "dealerDecisionStatus": "Approved"
+      },
+      "href": "string",
+      "submitter": "string",
+      "comment": "string"
+    },
+    "currencyCode": "USD",
+    "dealType": "Cash",
+    "employees": [
+      {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr."
+      }
+    ],
+    "financialDetails": {
+      "priceDetails": {
+        "currentOfferPrice": 27500,
+        "retailPrice": 30000,
+        "previousOfferPrice": 29250,
+        "sellingPrice": 28990,
+        "isOnePrice": false,
+        "discountOfMsrp": 572.32,
+        "discountPercentOfMsrp": 8.2
+      },
+      "profitDetails": {
+        "frontEndProfit": 1921.56,
+        "reserveProfit": 1248.46,
+        "totalProfit": 3170.02,
+        "backEndProfit": 100
+      },
+      "feeDetails": {
+        "feeSummary": {
+          "totalFees": 2000.15,
+          "totalUpfrontFees": 2000.15,
+          "totalCapitalizedFees": 2000.15
+        },
+        "fees": [
+          {
+            "feeReferenceId": "string",
+            "feeAmount": 100,
+            "feeName": "Doc Fee",
+            "feeDescription": "Documentation Fee",
+            "isFeeCapitalized": false,
+            "feeCategory": "Dealer",
+            "feeTypeId": 3,
+            "isFeeTaxable": true,
+            "feeTaxRate": 1.17,
+            "feeTaxAmount": 10.5,
+            "isFeeIncludedInCalculation": true,
+            "isManualFee": false
+          }
+        ]
+      },
+      "taxDetails": {
+        "taxSummary": {
+          "totalTax": 2086.04,
+          "totalUpfrontTax": 1086.04,
+          "capReductionTaxSummary": {
+            "taxBasisAmount": 700,
+            "taxRate": 0,
+            "taxAmount": 0
+          },
+          "monthlyUseTaxSummary": {
+            "taxBasisAmount": 700,
+            "taxRate": 0,
+            "taxAmount": 0,
+            "monthlyTaxAmount": 0
+          },
+          "salesTaxSummary": {
+            "taxBasisAmount": 700,
+            "taxRate": 0,
+            "salesTaxAmount": 0,
+            "flatTaxAmount": 0
+          },
+          "locationId": "AK-016-Z10268-1",
+          "taxDecisionLocation": "Dealer",
+          "isTaxCapitalized": true,
+          "dealerTaxAddress": {
+            "addressLine1": "6035 SE 37th St",
+            "addressLine2": "Apt 201",
+            "addressLine3": "Door box 3",
+            "city": "Mission",
+            "countyDistrict": "Johnson",
+            "stateProvince": "KS",
+            "country": "US",
+            "postalCode": "66217"
+          }
+        },
+        "taxes": [
+          {
+            "taxClass": "Primary",
+            "taxType": "MonthlyUseTax",
+            "taxName": "string",
+            "taxAmount": 0,
+            "taxRate": 0,
+            "taxBasisAmount": 0,
+            "taxBreakdown": {
+              "State": {
+                "rate": 100,
+                "taxableAmount": 0,
+                "taxTotal": 0,
+                "isManualRate": false,
+                "isManualTaxAmount": false
+              },
+              "County": {
+                "rate": 100,
+                "taxableAmount": 0,
+                "taxTotal": 0,
+                "isManualRate": false,
+                "isManualTaxAmount": false
+              },
+              "City": {
+                "rate": 100,
+                "taxableAmount": 0,
+                "taxTotal": 0,
+                "isManualRate": false,
+                "isManualTaxAmount": false
+              },
+              "Other": {
+                "rate": 100,
+                "taxableAmount": 0,
+                "taxTotal": 0,
+                "isManualRate": false,
+                "isManualTaxAmount": false
+              }
+            },
+            "taxMethodId": "string",
+            "taxMethodIdSystem": "DTDMS",
+            "isManualTax": false,
+            "isManualTaxAmount": false,
+            "isManualTaxRate": false
+          }
+        ]
+      },
+      "incentiveDetails": {
+        "incentiveSummary": {
+          "appliedIncentiveAmount": 2000,
+          "appliedIncentiveIds": [
+            123
+          ]
+        },
+        "incentives": [
+          {
+            "programType": "Standard",
+            "description": "Offer available to active duty U.S. military",
+            "incentiveId": 68346,
+            "isManualIncentive": true,
+            "programName": "2018 Honda CR-V LX Special Financing",
+            "cash": 100,
+            "endDate": "2022-02-15T09:10:26.6910000+00:00",
+            "exclusions": [
+              78764
+            ],
+            "fundingSource": "American Honda Finance Corp.",
+            "incentiveType": "Finance",
+            "programId": "HP-K90",
+            "startDate": "2022-02-13T09:10:26.6910000+00:00",
+            "isStandardRebate": false,
+            "conditionCategory": "Military",
+            "financeMethod": "Lease",
+            "termRebates": {
+              "incentiveTermRange": [
+                {
+                  "incentiveTermRange": [
+                    0
+                  ],
+                  "apr": 1.9,
+                  "customerCash": 100,
+                  "endTerm": 48,
+                  "startTerm": 36,
+                  "moneyFactor": 0.00079
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "productDetails": {
+        "productSummary": {
+          "totalProductAmount": 456.45,
+          "totalProductMonthlyPayment": 456.45
+        },
+        "products": [
+          {
+            "productName": "string",
+            "productPrice": 0,
+            "productCategoryCode": "string",
+            "profitLocation": "Front",
+            "productAddOnDetails": {
+              "productAddOnSummary": {
+                "totalProductAddOnCost": 156.45,
+                "totalProductAddOnPrice": 0
+              },
+              "productAddOns": [
+                {
+                  "addOnCost": 0,
+                  "addOnDescription": "string",
+                  "addOnPrice": 0,
+                  "addOnSurchargeCode": "string",
+                  "isAddOnEditable": true
+                }
+              ],
+              "unselectedProductAddOns": [
+                {
+                  "addOnCost": 0,
+                  "addOnDescription": "string",
+                  "addOnPrice": 0,
+                  "addOnSurchargeCode": "string",
+                  "isAddOnEditable": true
+                }
+              ]
+            },
+            "productCode": "string",
+            "productCost": 0,
+            "productInitialCost": 0,
+            "providerCode": "APC",
+            "productProviderName": "EasyCare",
+            "productProviderAddress": {
+              "addressType": "Other",
+              "addressLine1": "6035 SE 37th St",
+              "addressLine2": "Apt 201",
+              "addressLine3": "Door box 3",
+              "city": "Mission",
+              "countyDistrict": "Johnson",
+              "stateProvince": "KS",
+              "country": "US",
+              "postalCode": "66217"
+            },
+            "productDeductible": 0,
+            "productDeductibleMethod": "Reducing",
+            "productCoverage": "Add On",
+            "productCoverageEndDate": "2023-02-22T21:52:49.0350000+00:00",
+            "productCoverageLength": 0,
+            "productCoverageMiles": 0,
+            "productMaxCoverage": 0,
+            "productMarkup": {
+              "markupMethod": "Dollar",
+              "markupDollarAmount": 0,
+              "markupPercentage": 0
+            },
+            "productMonthlyPayment": 456.45,
+            "productProviderPlan": "EasyCare Silver TC/SC/PC/PW N/U/M 2015:2926",
+            "isWeOwe": true,
+            "weOweId": "AB123",
+            "minPriceAllowedByProvider": 100,
+            "maxPriceAllowedByProvider": 0,
+            "priceReducedToLenderMax": 0,
+            "productTaxRate": 0,
+            "productTaxAmount": 0,
+            "isProductTaxCapitalized": true,
+            "isProductPriceCapitalized": true,
+            "isProductTaxable": true,
+            "productResidualValue": 0,
+            "productResidualType": "Dollar",
+            "productServiceInterval": "string",
+            "productDmsId": "string"
+          }
+        ],
+        "unselectedProducts": [
+          {
+            "productName": "string",
+            "productPrice": 0,
+            "productCategoryCode": "string",
+            "profitLocation": "Front",
+            "productAddOnDetails": {
+              "productAddOnSummary": {
+                "totalProductAddOnCost": 156.45,
+                "totalProductAddOnPrice": 0
+              },
+              "productAddOns": [
+                {
+                  "addOnCost": 0,
+                  "addOnDescription": "string",
+                  "addOnPrice": 0,
+                  "addOnSurchargeCode": "string",
+                  "isAddOnEditable": true
+                }
+              ],
+              "unselectedProductAddOns": [
+                {
+                  "addOnCost": 0,
+                  "addOnDescription": "string",
+                  "addOnPrice": 0,
+                  "addOnSurchargeCode": "string",
+                  "isAddOnEditable": true
+                }
+              ]
+            },
+            "productCode": "string",
+            "productCost": 0,
+            "productInitialCost": 0,
+            "providerCode": "APC",
+            "productProviderName": "EasyCare",
+            "productProviderAddress": {
+              "addressType": "Other",
+              "addressLine1": "6035 SE 37th St",
+              "addressLine2": "Apt 201",
+              "addressLine3": "Door box 3",
+              "city": "Mission",
+              "countyDistrict": "Johnson",
+              "stateProvince": "KS",
+              "country": "US",
+              "postalCode": "66217"
+            },
+            "productDeductible": 0,
+            "productDeductibleMethod": "Reducing",
+            "productCoverage": "Add On",
+            "productCoverageEndDate": "2023-02-22T21:52:49.0350000+00:00",
+            "productCoverageLength": 0,
+            "productCoverageMiles": 0,
+            "productMaxCoverage": 0,
+            "productMarkup": {
+              "markupMethod": "Dollar",
+              "markupDollarAmount": 0,
+              "markupPercentage": 0
+            },
+            "productMonthlyPayment": 456.45,
+            "productProviderPlan": "EasyCare Silver TC/SC/PC/PW N/U/M 2015:2926",
+            "isWeOwe": true,
+            "weOweId": "AB123",
+            "minPriceAllowedByProvider": 100,
+            "maxPriceAllowedByProvider": 0,
+            "priceReducedToLenderMax": 0,
+            "productTaxRate": 0,
+            "productTaxAmount": 0,
+            "isProductTaxCapitalized": true,
+            "isProductPriceCapitalized": true,
+            "isProductTaxable": true,
+            "productResidualValue": 0,
+            "productResidualType": "Dollar",
+            "productServiceInterval": "string",
+            "productDmsId": "string"
+          }
+        ],
+        "productRequestOverrides": {
+          "estimatedContractDate": "2024-09-20T10:35:50.044Z",
+          "estimatedInServiceDate": "2024-09-20T10:35:50.044Z",
+          "estimatedPurchaseDate": "2024-09-20T10:35:50.044Z",
+          "includesWarranty": true,
+          "includesSealsAndGasketsMaintenance": true
+        }
+      },
+      "accessoryDetails": {
+        "accessorySummary": {
+          "totalAccessoryAmount": 550.34
+        },
+        "accessories": [
+          {
+            "accessoryProfitLocation": "Front",
+            "accessoryCode": "string",
+            "accessoryPartNumber": "VPC3Z16A550R",
+            "accessoryDmsId": "string",
+            "accessoryName": "Splash Guards",
+            "accessoryProviderName": "PartSites",
+            "accessoryPrice": 150,
+            "accessoryInitialPrice": 100,
+            "accessoryInstallationPrice": 50,
+            "accessoryCost": 75,
+            "accessoryInitialCost": 25,
+            "accessoryInstallationCost": 50,
+            "accessoryCategoryCode": "ACC",
+            "maxPriceAllowedByLender": 0,
+            "priceReducedToLenderMax": 0,
+            "accessoryTaxRate": 0,
+            "accessoryTaxAmount": 0,
+            "isTaxCapitalized": true,
+            "isPriceCapitalized": true,
+            "accessoryResidualValue": 0,
+            "accessoryResidualType": "Dollar",
+            "isWeOwe": true,
+            "isManualAccessory": false,
+            "isDealerInstalledOption": true,
+            "weOweId": "AB123"
+          }
+        ]
+      },
+      "weOweDetails": {
+        "weOwes": [
+          {
+            "weOweId": "AB123",
+            "weOweItemName": "string",
+            "weOweType": "Accessory",
+            "weOweItemPrice": 0,
+            "weOweItemCost": 0,
+            "isPaidByDealer": true
+          }
+        ]
+      },
+      "calculationDetails": {
+        "payment": {
+          "calculationEngine": {
+            "service": "CoxPaymentService",
+            "endpoint": "/program-quotes"
+          },
+          "calculationSourceIds": {
+            "partnerCode": "MMD",
+            "partnerDealerId": 1610
+          },
+          "calculationSettings": {
+            "useDealerDefaultTaxes": false,
+            "useDealerDefaultDealerBasedTaxes": false,
+            "useDealerDefaultLenderFees": false,
+            "useDealerDefaultDealerFees": false,
+            "useDealerDefaultGovFees": false,
+            "useCalculatedGovFees": false,
+            "includesAdditionalTaxes": true
+          },
+          "calculationOverrides": {
+            "buyRate": false,
+            "creditTier": false,
+            "lenderDiscount": false,
+            "retailPrice": false,
+            "totalSecurityDeposit": true,
+            "residualValue": false,
+            "residualType": "Dollar",
+            "sellRate": false,
+            "salesTaxAmount": false,
+            "flatTaxAmount": false,
+            "totalTax": false
+          }
+        },
+        "products": {
+          "calculationEngine": {
+            "service": "CoxFIExpress",
+            "endpoint": "https://dealxg-dev.awsdrstnp.makemydeal.com/api"
+          },
+          "calculationSourceIds": {
+            "partnerCode": "MMD",
+            "partnerDealerId": 1610
+          },
+          "calculationOverrides": {
+            "estimatedContractDate": "2024-09-20T10:35:50.045Z",
+            "estimatedInServiceDate": "2024-09-20T10:35:50.045Z",
+            "estimatedPurchaseDate": "2024-09-20T10:35:50.045Z",
+            "includesWarranty": true,
+            "includesSealsAndGasketsMaintenance": true
+          }
+        }
+      },
+      "paymentDetails": {
+        "term": 36,
+        "payment": 510.85,
+        "basePayment": 475.84,
+        "numberOfPayments": 2147483647,
+        "paymentsPerYear": 2147483647,
+        "daysToFirstPayment": 0,
+        "totalOfPayments": 18390.6,
+        "totalInterest": 5707.08,
+        "firstPayment": {
+          "amount": 0,
+          "paymentDate": "2023-02-22T21:52:49.0350000+00:00"
+        },
+        "finalPayment": {
+          "amount": 0,
+          "paymentDate": "2023-02-22T21:52:49.0350000+00:00"
+        },
+        "paymentFrequency": "OneTime",
+        "paymentSchedules": [
+          {
+            "paymentSequence": 0,
+            "scheduledPayment": {
+              "amount": 0,
+              "paymentDate": "2023-02-22T21:52:49.0350000+00:00"
+            }
+          }
+        ],
+        "amountFinanced": 46782.67,
+        "balloonExpiration": "2023-02-22T21:52:49.0350000+00:00",
+        "totalBalloonPaymentAmount": 0,
+        "balloonPercentage": 0.75,
+        "numberOfBalloonPayments": 24
+      },
+      "rateDetails": {
+        "buyRate": {
+          "apr": 1.9,
+          "moneyFactor": 0.019
+        },
+        "sellRate": {
+          "apr": 1.9,
+          "moneyFactor": 0.019
+        }
+      },
+      "dueInAdvanceDetails": {
+        "minimumCashDown": 0,
+        "netCashDown": 4120,
+        "customerDueAtSigning": 4120,
+        "totalSecurityDeposit": 0,
+        "securityDepositMethod": "Upfront",
+        "dueAtSigning": 4120,
+        "outOfPocket": 411.61,
+        "dealerCashCredit": 300.78,
+        "dealerContributionCredit": 300.78,
+        "cashOffSet": 100.5,
+        "federalEvTaxCredit": 5000,
+        "totalCredits": 300.78
+      },
+      "proceedDetails": {
+        "reserveGross": 400,
+        "reserveParticipationPercentage": 0.75,
+        "reservePaid": 0.7,
+        "totalReserve": 316,
+        "lenderDiscount": 1000,
+        "monthlyInterestOnRateMarkup": 8,
+        "totalInterestOnRateMarkup": 1783.51
+      },
+      "programDetails": {
+        "lenderId": 0,
+        "branchId": 0,
+        "branchName": "string",
+        "regionalId": 0,
+        "regionalTitle": "string",
+        "programName": "string",
+        "programType": "Standard",
+        "programSource": "AIS",
+        "rateProgram": "string",
+        "residualProgram": "string",
+        "term": 999,
+        "creditTier": 1,
+        "creditTierDesc": "High",
+        "creditTierTargetScore": 0,
+        "lenderPartnerName": "ABC Bank",
+        "programStartDate": "2023-02-22T21:52:49.0350000+00:00",
+        "programEndDate": "2023-02-22T21:52:49.0350000+00:00",
+        "maxAdvance": 0,
+        "maxAdvancePercent": 0.75,
+        "lenderLongName": "string",
+        "lenderCode": "string"
+      },
+      "cashDownPayment": 1000,
+      "downPaymentSchedule": {
+        "upfrontDownPayment": 0,
+        "totalDeferredDownPayment": 0,
+        "deferredDownPaymentSchedule": [
+          {
+            "paymentSequence": 0,
+            "scheduledPayment": {
+              "amount": 0,
+              "paymentDate": "2023-02-22T21:52:49.0350000+00:00"
+            }
+          }
+        ]
+      }
+    },
+    "isDealInitialOpportunity": true,
+    "visibility": {
+      "approvedByManager": false,
+      "isDraftDeal": false,
+      "needsManagerApproval": false
+    },
+    "participants": {
+      "buyer": {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr.",
+        "birthMonth": "01",
+        "birthYear": "1970",
+        "emailAddress": "dealcustomer@aol.com",
+        "estimatedCreditScore": 680,
+        "commonConsumerId": "string",
+        "address": {
+          "addressType": "Other",
+          "addressLine1": "6035 SE 37th St",
+          "addressLine2": "Apt 201",
+          "addressLine3": "Door box 3",
+          "city": "Mission",
+          "countyDistrict": "Johnson",
+          "stateProvince": "KS",
+          "country": "US",
+          "postalCode": "66217"
+        },
+        "phoneNumber": "8765432100"
+      },
+      "coBuyer": {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr.",
+        "birthMonth": "01",
+        "birthYear": "1970",
+        "emailAddress": "dealcustomer@aol.com",
+        "participantRole": "CoSigner",
+        "phoneNumber": "8765432100",
+        "address": {
+          "addressType": "Other",
+          "addressLine1": "6035 SE 37th St",
+          "addressLine2": "Apt 201",
+          "addressLine3": "Door box 3",
+          "city": "Mission",
+          "countyDistrict": "Johnson",
+          "stateProvince": "KS",
+          "country": "US",
+          "postalCode": "66217"
+        },
+        "estimatedCreditScore": 680,
+        "commonConsumerId": "string",
+        "relationshipToBuyer": "Relative"
+      }
+    },
+    "versionCreatedBy": {
+      "applicationName": "CMD",
+      "persona": "Dealer",
+      "dealerUser": "johndoe123"
+    },
+    "vehicles": {
+      "sellingVehicle": {
+        "inventoryType": "New",
+        "coxAutomotiveId": "string",
+        "vehicleDetailPage": "string",
+        "vehicleImage": "string",
+        "priceCostDetails": {
+          "baseMsrp": 0,
+          "originalMsrp": 0,
+          "destinationCharge": 0,
+          "invoiceAmount": 0,
+          "generalLedgerBalance": 0,
+          "salesCost": 0,
+          "commissionCost": 0,
+          "retailPrice": 30000,
+          "retailPriceName": "Internet",
+          "wholesaleValue": 31000.5,
+          "wholesaleValueType": "Loan",
+          "wholesaleBookSource": "KBB",
+          "wholesaleCondition": "VeryGood",
+          "holdBackAmount": 500,
+          "softPackAmount": 45,
+          "hardPackAmount": 250
+        },
+        "vin": "string",
+        "year": "stri",
+        "midModelYear": "stri",
+        "make": "string",
+        "model": "string",
+        "modelGroup": "string",
+        "modelCode": "string",
+        "trim": "string",
+        "subTrim": "string",
+        "bodyStyle": "Sedan",
+        "vehicleCodes": [
+          {
+            "codeType": "AlgCode",
+            "typeCode": "Used",
+            "yearCode": 978,
+            "makeCode": 280,
+            "modelCode": 151,
+            "styleCode": 115,
+            "year": "2021",
+            "makeName": "Honda",
+            "modelName": "Accord",
+            "styleDescription": "4dr Wgn LX"
+          },
+          {
+            "codeType": "OemCode",
+            "oemYear": 2019,
+            "oemMake": "5",
+            "oemModel": "19XB"
+          },
+          {
+            "codeType": "ACode",
+            "aCode": "string"
+          },
+          {
+            "codeType": "ChromeStyleId",
+            "chromeStyleId": 324389
+          }
+        ],
+        "vehicleInclusions": {
+          "includesDualRearWheel": true,
+          "includesLiftKitSuspension": true,
+          "includesSnowPlow": true,
+          "includesNavigationSystem": true,
+          "includesOversizedTires": true,
+          "includesTurboOrSupercharger": false
+        },
+        "odometerMileage": 0,
+        "targetMarketCountryCode": "US",
+        "exteriorColor": "Grey",
+        "oemExteriorColor": {
+          "oemColorName": "Radiant Red Metallic",
+          "oemColorCode": "R569M"
+        },
+        "interiorColor": "Red",
+        "oemInteriorColor": {
+          "oemColorName": "Radiant Red Metallic",
+          "oemColorCode": "R569M"
+        },
+        "installedOptions": [
+          {
+            "optionType": "Option",
+            "price": 0,
+            "cost": 0,
+            "details": {
+              "oemOptionCode": "string",
+              "secondaryOemOptionCode": "string",
+              "description": "string",
+              "optionGenericFeatures": [
+                "string"
+              ],
+              "classification": "Package",
+              "name": "Premium Plus Package"
+            }
+          },
+          {
+            "optionType": "Option",
+            "price": 0,
+            "cost": 0,
+            "details": {
+              "oemOptionCode": "string",
+              "secondaryOemOptionCode": "string",
+              "description": "string",
+              "optionGenericFeatures": [
+                "string"
+              ],
+              "classification": "Package",
+              "name": "Premium Plus Package"
+            },
+            "discount": 0,
+            "packageOptions": [
+              {
+                "oemOptionCode": "string",
+                "secondaryOemOptionCode": "string",
+                "description": "string",
+                "optionGenericFeatures": [
+                  "string"
+                ],
+                "classification": "Package",
+                "name": "Premium Plus Package"
+              }
+            ]
+          }
+        ],
+        "technicalSpecifications": {
+          "fuelEconomy": {
+            "fuelEconomyNumbers": {
+              "city": 10000,
+              "highway": 10000,
+              "combined": 10000
+            },
+            "gasEquivalentFuelEconomyNumbers": {
+              "city": 10000,
+              "highway": 10000,
+              "combined": 10000
+            },
+            "isGasGuzzler": true
+          },
+          "weightRatings": {
+            "frontAxle": 1000000,
+            "rearAxle": 1000000,
+            "grossCombinedWeightRating": 1000000,
+            "grossVehicleWeightRating": 1000000
+          },
+          "unladenWeight": 1000000,
+          "dimensions": {
+            "wheelBase": 1000000,
+            "overallLength": 1000000,
+            "overallHeight": 1000000,
+            "overallWidth": 1000000,
+            "bedLengthClassification": "Short",
+            "boxLength": 10000
+          },
+          "isOverOneTon": true
+        },
+        "powertrain": {
+          "axle": {
+            "numberOfAxles": 2,
+            "frontAxleGearRatio": 3.91,
+            "rearAxleGearRatio": 4.11
+          },
+          "drivetrainType": "AllWheelDrive",
+          "drivetrainDescription": "string",
+          "engineDetails": {
+            "description": "string",
+            "oemOptionCode": "string",
+            "fuelTypes": [
+              "Gasoline"
+            ],
+            "displacement": 4.4,
+            "displacementUnitOfMeasure": "CubicInch"
+          },
+          "transmissionDetails": {
+            "description": "string",
+            "oemOptionCode": "string",
+            "transmissionType": "Automatic"
+          }
+        },
+        "stockNumber": "181425AN",
+        "vehiclePriorUse": "Rental",
+        "vehicleUse": "Personal",
+        "vehicleInsurance": {
+          "insuranceCompany": "Progressive",
+          "policyNumber": "946AM345",
+          "agentName": "Jessica Doe",
+          "agentAddress": {
+            "addressType": "Other",
+            "addressLine1": "6035 SE 37th St",
+            "addressLine2": "Apt 201",
+            "addressLine3": "Door box 3",
+            "city": "Mission",
+            "countyDistrict": "Johnson",
+            "stateProvince": "KS",
+            "country": "US",
+            "postalCode": "66217"
+          },
+          "agentPhoneNumber": "8765432100",
+          "deductibles": {
+            "comprehensiveDeductible": 500,
+            "collisionDeductible": 500
+          },
+          "coverage": {
+            "bodilyInjuryPerPerson": 25000,
+            "bodilyInjuryPerAccident": 25000,
+            "propertyDamage": 25000,
+            "comprehensive": 25000
+          }
+        },
+        "stockInDate": "2024-06-27T15:00:00.0000000+00:00",
+        "isCustom": true
+      },
+      "tradeInVehicles": {
+        "tradeIns": [
+          {
+            "tradeVehicle": {
+              "isLeaseTrade": true,
+              "inventoryType": "New",
+              "vin": "string",
+              "year": "stri",
+              "midModelYear": "stri",
+              "make": "string",
+              "model": "string",
+              "modelGroup": "string",
+              "modelCode": "string",
+              "trim": "string",
+              "subTrim": "string",
+              "bodyStyle": "string",
+              "vehicleCodes": [
+                {
+                  "codeType": "AlgCode",
+                  "typeCode": "Used",
+                  "yearCode": 978,
+                  "makeCode": 280,
+                  "modelCode": 151,
+                  "styleCode": 115,
+                  "year": "2021",
+                  "makeName": "Honda",
+                  "modelName": "Accord",
+                  "styleDescription": "4dr Wgn LX"
+                },
+                {
+                  "codeType": "OemCode",
+                  "oemYear": 2019,
+                  "oemMake": "5",
+                  "oemModel": "19XB"
+                },
+                {
+                  "codeType": "ACode",
+                  "aCode": "string"
+                },
+                {
+                  "codeType": "ChromeStyleId",
+                  "chromeStyleId": 324389
+                }
+              ],
+              "odometer": 0,
+              "condition": "string",
+              "targetMarketCountryCode": "US",
+              "exteriorColor": "Grey",
+              "oemExteriorColor": {
+                "oemColorName": "Radiant Red Metallic",
+                "oemColorCode": "R569M"
+              },
+              "interiorColor": "Red",
+              "oemInteriorColor": {
+                "oemColorName": "Radiant Red Metallic",
+                "oemColorCode": "R569M"
+              },
+              "installedOptions": [
+                {
+                  "optionType": "Option",
+                  "price": 0,
+                  "cost": 0,
+                  "details": {
+                    "oemOptionCode": "string",
+                    "secondaryOemOptionCode": "string",
+                    "description": "string",
+                    "optionGenericFeatures": [
+                      "string"
+                    ],
+                    "classification": "Package",
+                    "name": "Premium Plus Package"
+                  }
+                },
+                {
+                  "optionType": "Option",
+                  "price": 0,
+                  "cost": 0,
+                  "details": {
+                    "oemOptionCode": "string",
+                    "secondaryOemOptionCode": "string",
+                    "description": "string",
+                    "optionGenericFeatures": [
+                      "string"
+                    ],
+                    "classification": "Package",
+                    "name": "Premium Plus Package"
+                  },
+                  "discount": 0,
+                  "packageOptions": [
+                    {
+                      "oemOptionCode": "string",
+                      "secondaryOemOptionCode": "string",
+                      "description": "string",
+                      "optionGenericFeatures": [
+                        "string"
+                      ],
+                      "classification": "Package",
+                      "name": "Premium Plus Package"
+                    }
+                  ]
+                }
+              ],
+              "technicalSpecifications": {
+                "fuelEconomy": {
+                  "fuelEconomyNumbers": {
+                    "city": 10000,
+                    "highway": 10000,
+                    "combined": 10000
+                  },
+                  "gasEquivalentFuelEconomyNumbers": {
+                    "city": 10000,
+                    "highway": 10000,
+                    "combined": 10000
+                  },
+                  "isGasGuzzler": true
+                },
+                "weightRatings": {
+                  "frontAxle": 1000000,
+                  "rearAxle": 1000000,
+                  "grossCombinedWeightRating": 1000000,
+                  "grossVehicleWeightRating": 1000000
+                },
+                "unladenWeight": 1000000,
+                "dimensions": {
+                  "wheelBase": 1000000,
+                  "overallLength": 1000000,
+                  "overallHeight": 1000000,
+                  "overallWidth": 1000000,
+                  "bedLengthClassification": "Short",
+                  "boxLength": 10000
+                },
+                "isOverOneTon": true
+              },
+              "powertrain": {
+                "axle": {
+                  "numberOfAxles": 2,
+                  "frontAxleGearRatio": 3.91,
+                  "rearAxleGearRatio": 4.11
+                },
+                "drivetrainType": "AllWheelDrive",
+                "drivetrainDescription": "string",
+                "engineDetails": {
+                  "description": "string",
+                  "oemOptionCode": "string",
+                  "fuelTypes": [
+                    "Gasoline"
+                  ],
+                  "displacement": 4.4,
+                  "displacementUnitOfMeasure": "CubicInch"
+                },
+                "transmissionDetails": {
+                  "description": "string",
+                  "oemOptionCode": "string",
+                  "transmissionType": "Automatic"
+                }
+              }
+            },
+            "tradeValuation": {
+              "valueType": "string",
+              "bookName": "string",
+              "bookRegion": "string",
+              "bookValue": 0,
+              "condition": "string",
+              "actualCashValue": 0,
+              "appraisalDate": "2023-02-22T21:52:49.0350000+00:00",
+              "appraisedBy": "string",
+              "acquisitionOffer": {
+                "source": "KBB-ICO, Dealer",
+                "amount": 0,
+                "offerId": "string",
+                "acquisitionStatus": "string",
+                "offerDate": "2023-02-22T21:52:49.0350000+00:00",
+                "expirationDate": "2023-02-22T21:52:49.0350000+00:00"
+              }
+            },
+            "tradeAllowance": 1000,
+            "appliedTradeAllowance": 0,
+            "tradePayoffDetails": {
+              "tradePayoffAmount": 0,
+              "tradeInPayoffSource": "System",
+              "lienHolder": "string",
+              "lienHolderAccountNumber": "string",
+              "goodThroughDate": "2023-05-22T21:52:49.0350000+00:00",
+              "perDiemInterest": 0,
+              "lienHolderAddress": {
+                "addressType": "Other",
+                "addressLine1": "6035 SE 37th St",
+                "addressLine2": "Apt 201",
+                "addressLine3": "Door box 3",
+                "city": "Mission",
+                "countyDistrict": "Johnson",
+                "stateProvince": "KS",
+                "country": "US",
+                "postalCode": "66217"
+              }
+            },
+            "isTradeIncluded": true,
+            "isBuyerRegisteredOwner": true,
+            "isSellingVehicleRegisteredInSameState": true,
+            "tradeInType": "Finance",
+            "tradeInDealerBoostAmount": 0
+          }
+        ],
+        "tradeInSummary": {
+          "totalAllowance": 1000,
+          "totalPayoff": 500,
+          "netTrade": 1000,
+          "totalAcv": 2000,
+          "totalTradeProfit": 1000,
+          "amountAppliedAsCapReduction": 1000,
+          "totalTradeCreditAmount": 234.55,
+          "tradeCreditName": "string"
+        }
+      }
+    },
+    "version": "string",
+    "versionComment": "string",
+    "versionCreatedOn": "2023-02-22T21:52:49.0350000+00:00"
+  },
+  "documents": [
+    {
+      "documentType": "LoanDocuments",
+      "documentStatus": "Submitted",
+      "href": "string",
+      "submitter": "string",
+      "comment": "string",
+      "updateTimeStamp": "2023-02-22T21:52:49.0350000+00:00"
+    }
+  ],
+  "dealProgressMilestones": {
+    "accessories": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "creditApplication": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "documentUpload": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "incentives": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "offer": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "testDrive": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "tradeIn": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "vehicleProtectionProducts": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    },
+    "vehicleReservation": {
+      "state": "NotStarted",
+      "persona": "Dealer",
+      "applicationName": "Showroom",
+      "updatedOn": "2024-09-20T10:35:50.046Z"
+    }
+  },
+  "employees": [
+    {
+      "employeeDmsId": "string",
+      "employeeRole": "PrimarySalesperson",
+      "employeeLicenseNumber": "string",
+      "bridgeId": "string",
+      "referenceId": "string",
+      "name": {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr."
+      },
+      "phoneContactInfo": {
+        "phoneNumber": "8765432100",
+        "tcpaConsent": false,
+        "isMobile": true,
+        "contactType": "Personal"
+      },
+      "emailContactInfo": {
+        "emailAddress": "dealcustomer@aol.com",
+        "contactType": "Personal"
+      },
+      "additionalContacts": [
+        {
+          "emailAddress": "dealcustomer@aol.com",
+          "contactType": "Personal"
+        },
+        {
+          "phoneNumber": "8765432100",
+          "tcpaConsent": false,
+          "isMobile": true,
+          "contactType": "Personal"
+        },
+        {
+          "contactType": "Personal",
+          "socialMediaType": "Facebook",
+          "usernameHandle": "string",
+          "displayName": "string"
+        }
+      ]
+    }
+  ],
+  "language": "en",
+  "meta": {
+    "apiVersion": "4.2.0",
+    "clientId": "gpf3X8O0oa58t19oAU57",
+    "clientName": "Accelerate",
+    "current": true,
+    "lastModifiedDate": "2024-02-22T21:52:49.0350000+00:00",
+    "requestApiVersion": "4.2.0"
+  },
+  "participants": [
+    {
+      "business": {
+        "legalName": "Acme LLC",
+        "dbaName": "Acme",
+        "financialStatementDescription": "CPA Audited",
+        "yearsInBusiness": 10,
+        "numberOfEmployees": 100,
+        "bankName": "Chase",
+        "businessSigner": {
+          "salutation": "Ms.",
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "middleName": "Elizabeth",
+          "middleInitial": "C",
+          "suffix": "Jr."
+        },
+        "bankContactName": {
+          "salutation": "Ms.",
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "middleName": "Elizabeth",
+          "middleInitial": "C",
+          "suffix": "Jr."
+        },
+        "bankContactPhoneNumber": {
+          "phoneNumber": "8765432100",
+          "tcpaConsent": false,
+          "isMobile": true,
+          "contactType": "Personal"
+        },
+        "preferredLanguage": "en",
+        "preferredContactMethod": "Phone",
+        "taxLocationId": "NC-129-Y14967-1"
+      },
+      "primaryAddress": {
+        "addressType": "Other",
+        "addressLine1": "6035 SE 37th St",
+        "addressLine2": "Apt 201",
+        "addressLine3": "Door box 3",
+        "city": "Mission",
+        "countyDistrict": "Johnson",
+        "stateProvince": "KS",
+        "country": "US",
+        "postalCode": "66217"
+      },
+      "additionalAddresses": [
+        {
+          "addressType": "Other",
+          "addressLine1": "6035 SE 37th St",
+          "addressLine2": "Apt 201",
+          "addressLine3": "Door box 3",
+          "city": "Mission",
+          "countyDistrict": "Johnson",
+          "stateProvince": "KS",
+          "country": "US",
+          "postalCode": "66217"
+        }
+      ],
+      "dmsId": "string",
+      "pixallId": "string",
+      "commonConsumerId": "string",
+      "customerType": "Individual",
+      "estimatedCreditScore": 680,
+      "name": {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr."
+      },
+      "birthDate": {
+        "birthMonth": "01",
+        "birthYear": "1970"
+      },
+      "spouse": {
+        "salutation": "Ms.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "middleName": "Elizabeth",
+        "middleInitial": "C",
+        "suffix": "Jr.",
+        "address": {
+          "addressType": "Other",
+          "addressLine1": "6035 SE 37th St",
+          "addressLine2": "Apt 201",
+          "addressLine3": "Door box 3",
+          "city": "Mission",
+          "countyDistrict": "Johnson",
+          "stateProvince": "KS",
+          "country": "US",
+          "postalCode": "66217"
+        },
+        "phoneNumber": "8765432100",
+        "emailAddress": "dealcustomer@aol.com"
+      },
+      "phoneContactInfo": {
+        "phoneNumber": "8765432100",
+        "tcpaConsent": false,
+        "isMobile": true,
+        "contactType": "Personal"
+      },
+      "emailContactInfo": {
+        "emailAddress": "dealcustomer@aol.com",
+        "contactType": "Personal"
+      },
+      "additionalContacts": [
+        {
+          "emailAddress": "dealcustomer@aol.com",
+          "contactType": "Personal"
+        },
+        {
+          "phoneNumber": "8765432100",
+          "tcpaConsent": false,
+          "isMobile": true,
+          "contactType": "Personal"
+        },
+        {
+          "contactType": "Personal",
+          "socialMediaType": "Facebook",
+          "usernameHandle": "string",
+          "displayName": "string"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "string",
+      "value": "string"
+    }
+  ],
+  "saleType": "Retail",
+  "X-CoxAuto-Correlation-Id": "string"
+}

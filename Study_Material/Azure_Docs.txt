@@ -1,0 +1,117 @@
+Azure:
+
+Services
+
+1. Azure App Services (AWS Elastic Beanstalk): Platform as a service (PaaS) provides fully managed server, Use App Service when you're 
+migrating existing web applications to Azure, and when you need a fully-managed hosting platform for your web apps. You can also use App 
+Service when you need to support mobile clients or expose REST APIs with your app.
+
+
+2. Azure VMs (AWS EC2): Infrastructure as a Service (IaaS) provides full control on server, Use Virtual Machines when you want full control 
+over your application infrastructure or to migrate on-premises application workloads to Azure without having to make changes.
+
+3. Azure Function (AWS Lambda): Serverless and Pay as you used, Use Azure Functions when you have code that is triggered by other Azure 
+services, by web-based events, or on a schedule. You can also use Functions when you don't need the overhead of a complete hosted project 
+or when you only want to pay for the time that your code runs
+
+4. Azure Service Fabric : Distributed system platform, follow microservice architecture
+Service Fabric is a good choice when you're creating an application or rewriting an existing application to use a microservice architecture. 
+Use Service Fabric when you need more control over, or direct access to, the underlying infrastructure.
+
+5. Azure Cosmos DB : globally distributed, multi-model database service, When your application needs document, table, or graph databases, 
+including MongoDB databases, with multiple well-defined consistency models.
+
+6. Azure Storage : Offers durable, highly available storage, When your app stores nonrelational data, such as key-value pairs (tables), blobs, 
+files shares, or messages (queues).
+
+7. Azure SQL Database: An Azure-based version of the Microsoft SQL Server engine for storing relational tabular data in the cloud. SQL Database 
+provides predictable performance, scalability with no downtime, business continuity, and data protection.
+
+8. Azure Data Factory : moving existing on-primise data to azure, It is the cloud-based ETL and data integration service that allows you to 
+create data-driven workflows for orchestrating data movement and transforming data at scale
+
+
+9. Azure AD (Active Directory): Microsoft multitenant, cloud-based identity and access management service, When you want to provide an SSO 
+experience, work with Graph-based data, or authenticate domain-based users
+
+10. App Service Authentication : When you want to enable authentication in an App Service app by using Azure AD, social identity providers, 
+or both
+
+11. Application Insights : 
+
+12. Azure Monitor : for monitoring, service that helps you to visualize, query, route, archive, and act on the metrics and logs that you 
+generate with your Azure infrastructure and resources
+
+13. Azure Resource Manager (AWS Cloud Formation): lets you work with the resources in your application as a group. You can deploy, update, or delete all the resources 
+in a single, coordinated operation
+
+
+
+Account Administrator - full control over subscription
+Service Administrator - full control over all services in subscription
+
+Resource Group : azure services are also called resources, resource group contain all the resources for your application that you want to work 
+as a unit
+
+User can grant access at three level - 
+1. Subscription
+2. Resource Group
+3. Individual Resource
+
+
+
+Storage - 
+Redundancy Type
+1. Local Redundancy Storage - if copy of data is present in same Availability zone but in different racks and if AZ goes down then we can not access the data
+
+2. Zone Redundancy Storage - if copy of data is present in two different zone and one zone is down then also we can access the data due to other zone, 
+data is highly available.
+
+3. Geo Redundancy Storage - Data is redundant accross region, so copy of data is present accross region and available only when entire region is
+ down not only zone. (best for diaster recovery but not highly available)
+ 
+
+4. Geo Zone Redundancy Storage - Data is redundant accross region and zone, so copy of data is present accross region and zone and highly 
+available data
+
+5. Read Access Geo Redundancy Storage and Read Access Geo Zone Redundancy : give access of data from other region when region failovers not happen,
+for managing the load or traffic.
+
+Storage Type:
+1. Hot Access Tier - when object used frequently, storage cost high, data transfer rate is low
+
+2. Cold Access Tier - when object used in frequently, low storage cost, data transfer rate is high
+
+3. Achive Tier - when object used rarely, low storage cost, data retrieval rate is high
+
+Lifecycle management policy - we can set up policy for transferring data from one tier to another.
+
+
+
+Azure Blob Storage + Azure Data Lake Storage Gen1 = Azure Data Lake Storage Gen2
+
+Ans - You get the best of both worlds. File system semantics, directory and file-level security 
+capabilities from ADLS Gen1 are combined with the low-cost, tiered storage, high availability/disaster 
+recovery capabilities from Azure Blob Storage.
+
+
+
+Modes of Spark:
+1. Local Mode - Used for training/development purpose, spark master and spark worker node lying on same machine
+
+2. Client Mode - spark master/driver lying on client machine and zob submitted to worker node, if client machine
+goes done then zob aborted
+
+3. Cluster Mode - spark master/ driver node created on cluster, so when submitting the job from machine it will
+come to driver node and then go to worker node, used in production so if machine goes down then job won't be aborted.
+
+Resource Manager
+1. Standalone - Resource manager is residing on master node only and managing resource allocation via communication 
+with cluster manager, give information back to driver program
+
+2. Yarn/Mesos - It's own separate cluster apart from master node, driver manager communicate with yarn for 
+resource allocation.
+
+
+
+https://docs.microsoft.com/en-us/azure/guides/developer/azure-developer-guide
